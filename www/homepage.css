@@ -1,0 +1,405 @@
+/* Match font from original website */
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+
+/* overriding bootstrap */
+/*.container-fluid,
+.navbar{
+    width: 100%;
+    padding: 0 auto !important;
+    margin:0 auto !important;
+}*/
+
+/* remove margins from container fluid for Home tab only */
+
+.container-fluid1{
+  padding: 0px !important;
+
+}
+
+
+/* header background image */
+div.row.header {
+    background-image: url(bird_background.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 63em;
+    margin-top: -2em;
+
+}
+
+/*header text*/
+.header h1{
+  color: white;
+  margin-top: 1em;
+  margin-left: 0.75em;
+    margin-bottom: 1em;
+    /*margin-right: -5em;*/
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 44px;
+    line-height: 56px;
+    font-weight: 500;
+}
+
+.header p {
+  font-family: Roboto, sans-serif;
+  color: white;
+  margin-left: 2em;
+  /*margin-right: -4em;*/
+  font-size: 18px;
+
+}
+
+
+
+/* logo row margins*/
+.logo {
+  margin-top: 20px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* propoerties of intro text*/
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*padding-right: 200px;
+  padding-left: 200px;
+  text-align: center !important;
+  margin-top: 2em; */
+}
+
+
+.title h3 {
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+}
+
+
+.title p {
+  padding: 0px;
+  text-align: center;
+  margin: auto;
+}
+
+
+.title strong{
+  /*display: inline-block;*/
+    margin-bottom: 10px;
+    padding: 4px 7px 4px 8px;
+    border-radius: 4px;
+    background-color: rgba(98, 209, 248, 0.2);
+    color: #001a57;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+/* properties of explore research section*/
+
+.research {
+  /*padding-right: 200px;
+  padding-left: 200px;*/
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+}
+
+div.row.research {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  margin-top: 2em;
+}
+
+
+.research h2, h5 {
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  color: #30364d;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+  vertical-align: bottom;
+}
+
+.research p {
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+  color: #798099;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+
+.research img{
+  max-width: 100%;
+  width: 100%;
+  height: auto
+  margin-bottom: 0;
+}
+
+div.row.speciesBlock {
+    display: grid;
+    grid-column-gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* make speciesBlock column in mobile view */
+
+@media only screen and (max-width: 768px) {
+  .row.speciesBlock {
+    display: grid;
+    grid-template-columns: 1fr !important;
+    padding: 1em;
+    grid-row-gap: 100px;
+  }
+}
+
+/* add shaddow to buttons */
+div.col-sm-3.specs {
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 15px 30px 0 rgb(48 54 77 / 10%);
+    color: #30364d;
+    text-align: center;
+    /*margin-left: auto;*/
+    max-width: fit-content;
+    padding: 15px;
+}
+
+
+
+/* had to put first two text elements in separate div to stack them */
+.split {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+
+}
+
+
+.research strong{
+  /*display: inline-block;*/
+    margin-bottom: 10px;
+    padding: 4px 7px 4px 8px;
+    border-radius: 4px;
+    background-color: rgba(98, 209, 248, 0.2);
+    color: #001a57;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+/* data streams properties */
+
+.data {
+  /*padding-right: 200px;
+  padding-left: 200px;*/
+  text-align: center !important;
+  margin-top: 2em;
+}
+
+.data p, h2 {
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+}
+
+.data h2 {
+  color: #30364d;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+}
+
+.data p {
+  color: #798099;
+  font-family: Roboto, sans-serif;
+  font-size: 18px;
+}
+
+/* had to put first two text elements in separate div to stack them */
+.split2 {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: auto;
+
+}
+
+
+.data strong{
+  /*display: inline-block;*/
+    margin-bottom: 10px;
+    padding: 4px 7px 4px 8px;
+    border-radius: 4px;
+    background-color: rgba(98, 209, 248, 0.2);
+    color: #001a57;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+
+.data {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction:column;
+ /* margin: auto;*/
+}
+
+
+.col-sm-8 {
+  float:none;
+}
+
+
+.data img{
+  /*float: left;*/
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  margin: 1em;
+  border-radius: 8px;
+  box-shadow: 0 15px 30px 0 rgb(48 54 77 / 50%);
+}
+
+.climatedata img {
+  /*width: 300px !important;*/
+  margin-top: 5em !important;
+}
+
+.biodiversity img {
+ /* width: 300px !important; */
+  margin-top: 5em !important;
+}
+
+.data a:hover {
+  background-color: #dbdbc3;
+  text-decoration: none;
+}
+
+.data a {
+    color: #000;
+    background-color: #FAFAF5;
+    border-color: #FAFAF5;
+    cursor: pointer;
+    border: 1px solid transparent;
+    padding: 0.375rem 0.75rem;
+    border-radius: 0.25rem;
+    font-size: 11px;
+    line-height: 22px;
+    font-weight: 500;
+    text-transform: uppercase;
+    overflow: visible;
+    box-shadow: 0 15px 30px 0 rgb(48 54 77 / 20%);
+}
+
+/*center tabset*/
+.datatabs ul.nav.nav-tabs {
+    justify-content: center;
+}
+
+
+
+/* community section */
+
+
+.community strong{
+  /*display: inline-block;*/
+    margin-bottom: 10px;
+    padding: 4px 7px 4px 8px;
+    border-radius: 4px;
+    background-color: rgba(98, 209, 248, 0.2);
+    color: #001a57;
+    font-size: 15px;
+    line-height: 16px;
+    font-weight: 500;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+}
+
+
+.community {
+  padding-right: 200px;
+  padding-left: 200px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center !important;
+}
+
+
+div.row.community {
+  display: flex;
+  justify-content: center;
+  /*flex-direction: column !important; */
+  /*align-items: flex-end;*/
+  margin: auto;
+}
+
+div.row.links {
+  display: flex;
+  justify-content: center !important;
+  padding-left: 5em;
+  padding-right: 5em;
+}
+
+
+.community p, h2 {
+  padding: 15px;
+  text-align: center;
+  margin: auto;
+}
+
+.community h2 {
+  color: #30364d;
+  font-family: 'Fira Sans', sans-serif;
+  font-weight: 500;
+}
+
+.community p {
+  color: #798099;
+  font-family: Roboto, sans-serif;
+}
+
+
+.community a {
+    color: #000;
+    background-color: #FAFAF5;
+    border-color: #FAFAF5;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    font-size: 25px;
+    line-height: 22px;
+    font-weight: 500;
+    padding: 1em;
+    margin: 1em;
+    /*text-transform: uppercase;*/
+    overflow: visible;
+    box-shadow: 0 15px 30px 0 rgb(48 54 77 / 20%);
+}
+
+
+.community a:hover {
+  background-color: #dbdbc3;
+  text-decoration: none;
+}
+
+
