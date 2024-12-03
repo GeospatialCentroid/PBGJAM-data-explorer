@@ -1132,7 +1132,7 @@ server <- function(input, output, session) {
                              str_detect(name, "def") ~ "def")) %>% 
       pivot_wider(names_from = var, values_from = value) %>% 
       group_by(plot.ID, scenario, time) %>% 
-      reframe(across(c("abundance", "tmean", "def"), ~sum(.x, na.rm = TRUE)), across()) %>% 
+      summarise(across(c("abundance", "tmean", "def"), ~sum(.x, na.rm = TRUE)), across()) %>% 
       
       #summarise(across(c("abundance", "tmean", "def"), ~sum(.x, na.rm = TRUE)), across()) %>% 
       mutate(time = factor(time, levels = c("history", "2021.204", "2061.208", "2081.21")),
